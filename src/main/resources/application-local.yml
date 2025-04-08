@@ -1,0 +1,44 @@
+spring:
+  config:
+    activate:
+      on-profile: local
+
+  datasource:
+    url: jdbc:mysql://localhost:3307/uandmy?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: root
+    password: sk770869!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      jakarta:
+        persistence:
+          validation:
+            mode: none
+          sharedCache:
+            mode: ENABLE_SELECTIVE
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL8Dialect
+      show-sql: true
+
+  output:
+    ansi:
+      enabled: always
+
+server:
+  port: 8080
+
+#logging:
+#  level:
+#    root: info
+#    org.springframework.web: debug
+#    org.hibernate.SQL: debug
+#    org.hibernate.orm.jdbc.bind: trace
+#    org.apache.tomcat.util.compat: warn
+#    org.apache.catalina.core.AprLifecycleListener: error
+#
+#jwt:
+#  secret: AerokInportalSecretKeyThatIsSecureAndLongEnough2025!
