@@ -1,4 +1,4 @@
-package com.uandmy.back.common.seurity;
+package com.uandmy.back.common.security;
 
 
 import com.uandmy.back.user.dto.UserDetailDto;
@@ -17,7 +17,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.Date;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 @Component
 public class JwtTokenProvider {

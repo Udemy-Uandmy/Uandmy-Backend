@@ -1,11 +1,10 @@
 package com.uandmy.back.user.service;
 import com.uandmy.back.common.base.BaseService;
-import com.uandmy.back.common.seurity.JwtTokenProvider;
+import com.uandmy.back.common.security.JwtTokenProvider;
 import com.uandmy.back.user.dto.UserDetailDto;
 import com.uandmy.back.user.dto.UserDto;
 import com.uandmy.back.user.entity.User;
 import com.uandmy.back.user.repository.UserRepository;
-import io.jsonwebtoken.Jwts;
 import lombok.RequiredArgsConstructor;
 
 import org.springframework.beans.factory.annotation.Autowired;

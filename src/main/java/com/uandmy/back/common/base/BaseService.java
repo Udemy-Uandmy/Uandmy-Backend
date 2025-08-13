@@ -1,7 +1,7 @@
 package com.uandmy.back.common.base;
 
 
-import com.uandmy.back.common.seurity.SecurityUtil;
+import com.uandmy.back.common.security.SecurityUtil;
 import com.uandmy.back.common.utils.StringUtils;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;

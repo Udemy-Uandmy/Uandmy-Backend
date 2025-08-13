@@ -1,4 +1,4 @@
-package com.uandmy.back.common.seurity;
+package com.uandmy.back.common.security;
 
 
 import com.uandmy.back.user.dto.UserDetailDto;
