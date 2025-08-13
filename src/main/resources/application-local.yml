@@ -1,3 +1,8 @@
+server:
+  port: 9090
+
+base-url: http://localhost:9090
+
 spring:
   config:
     activate:
@@ -28,17 +33,26 @@ spring:
     ansi:
       enabled: always
 
-server:
-  port: 8080
-
-#logging:
-#  level:
-#    root: info
-#    org.springframework.web: debug
-#    org.hibernate.SQL: debug
-#    org.hibernate.orm.jdbc.bind: trace
-#    org.apache.tomcat.util.compat: warn
-#    org.apache.catalina.core.AprLifecycleListener: error
+logging:
+  level:
+    root: info  # 전체 로그 기본 레벨
+    org.springframework: info  # 스프링 관련 로그 (예: Controller, Service 흐름)
+    org.hibernate.SQL: debug  # 실행되는 SQL 쿼리
+    org.hibernate.orm.jdbc.bind: trace  # JPA 바인딩 파라미터
+    org.hibernate.type.descriptor.sql: trace  # SQL 타입 바인딩
+#    com.querydsl: debug  # QueryDSL 생성 쿼리
+#    org.springframework.web: debug  # 요청/응답 흐름 디버깅
+#    org.springframework.security: info  # 인증/인가 흐름
+#    org.springframework.transaction: debug  # 트랜잭션 관련 로그
+#    org.apache.coyote.http11: error  # 톰캣 요청 처리 중 에러
+#    org.hibernate.engine.jdbc.spi.SqlExceptionHelper: warn  # SQL 예외 메시지 깔끔하게
 #
-#jwt:
-#  secret: AerokInportalSecretKeyThatIsSecureAndLongEnough2025!
+
+
+file:
+  upload-path: C:/workspace-test/upload/files
+  editor-upload-path: C:/workspace-test/upload/files/image
+
+
+jwt:
+  secret: UandmySecretKeyThatIsSecureAndLongEnough2025!
